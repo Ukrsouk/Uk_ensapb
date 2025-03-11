@@ -1,0 +1,230 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Barre horizontale fixe en haut */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.topbar .name {
+    font-weight: bold;
+    color: #333;
+}
+
+.topbar .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu déroulant */
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+}
+
+.dropdown-menu ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+/* Sections */
+.container {
+    margin-bottom: 40px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #444;
+}
+
+.container p {
+    margin-bottom: 15px;
+}
+
+.container ul {
+    margin-left: 20px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+/* Section Skills */
+#skills {
+    margin-top: 40px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+.skill-bar {
+    display: inline-block;
+    width: calc(100% - 140px);
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #4caf50;
+    text-align: right;
+    padding-right: 5px;
+    color: white;
+    font-size: 12px;
+    line-height: 20px;
+    border-radius: 10px;
+}
+
+/* Styles pour la grille du portfolio */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-item {
+    flex: 1 1 calc(33.333% - 40px);
+    text-align: center;
+    cursor: pointer;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styles pour la modale */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#modalImages img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+/* Section Parcours */
+#parcours {
+    margin-top: 40px;
+}
+
+.parcours-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parcours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    gap: 30px; /* Ajoute un espace entre les éléments flexibles */
+}
+
+.parcours-annee {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    color: #444;
+    margin-right: 30px; /* Espace entre l'année et le nom de l'école */
+}
+
+.parcours-ecole {
+    flex: 2;
+    text-align: right;
+    color: #333;
+    margin-right: 20px; /* Espace entre le nom de l'école et le diplôme */
+}
+
+.parcours-diplome {
+    flex: 1;
+    text-align: right;
+    font-style: italic;
+    color: #666;
+}
