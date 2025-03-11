@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSAPB - Sofiia Ukrainska</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barre horizontale fixe en haut -->
+    <div class="topbar">
+        <span class="name">Sofiia Ukrainska, M1 2025</span>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
+    </div>
+
+    <!-- Menu déroulant -->
+    <nav class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="#about" onclick="closeMenu()">À propos de moi</a></li>
+            <li><a href="#school-projects" onclick="closeMenu()">Les projets de l'école</a></li>
+            <li><a href="#thesis" onclick="closeMenu()">Recherche pour le mémoire</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="main-content">
+        <!-- Section À propos de moi -->
+        <section id="about" class="container">
+            <h2>À propos de moi</h2>
+            <p>
+                Je m'appelle Sofiia Ukrainska, j'ai 23 ans et je suis étudiante en Master 1 à l'École Nationale Supérieure d'Architecture de Paris-Belleville. Mon approche de l'architecture s'inscrit dans une réflexion sur l'habitat collectif, l'urbanisme participatif et la manière dont l'architecture façonne les modes de vie. Actuellement, je travaille sur mon mémoire consacré au logement participatif, en étudiant notamment Les Jardies à Meudon, un projet emblématique conçu par l'architecte Claude Guislan en 1973.
+            </p>
+        </section>
+
+        <!-- Section Skills -->
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skill">
+                <span class="skill-name">AutoCAD</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Revit</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">ArchiCAD</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 50%;">50%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Affinity</span>
+                <div class="skill-bar"> 
+                    <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+            </div>
+        </section>
+        
+        <!<!-- Section Parcours -->
+<section id="parcours" class="container">
+    <h2>Parcours</h2>
+    <div class="parcours-grid">
+        <!-- Élément 1 -->
+        <div class="parcours-item">
+            <span class="parcours-annee">2018 - 2021</span>
+            <span class="parcours-ecole">École Nationale Supérieure d'Architecture de Paris-Belleville</span>
+            <span class="parcours-diplome">Licence en Architecture</span>
+        </div>
+        <!-- Élément 2 -->
+        <div class="parcours-item">
+            <span class="parcours-annee">2021 - 2025</span>
+            <span class="parcours-ecole">École Nationale Supérieure d'Architecture de Paris-Belleville</span>
+            <span class="parcours-diplome">Master en Architecture</span>
+        </div>
+        <!-- Ajoutez d'autres éléments si nécessaire -->
+    </div>
+</section>
+        <!-- Section Les projets de l'école -->
+        <section id="school-projects" class="container">
+            <h2>Les projets de l'école</h2>
+            <p>
+                Voici quelques-uns des projets que j'ai réalisés dans le cadre de mes études :
+            </p>
+            <ul>
+                <li>Projet 1 : Description du projet 1.</li>
+                <img src="projet1.jpg" alt="Photo du Projet 1" style="max-width: 100%; height: auto;">
+                <p>Description du projet 1.</p>
+                <li>Projet 2 : Description du projet 2.</li>
+                <li>Projet 3 : Description du projet 3.</li>
+            </ul>
+        </section>
+
+        <!-- Section Recherche pour le mémoire -->
+        <section id="thesis" class="container">
+            <h2>Recherche pour le mémoire</h2>
+            <p>
+                Mon mémoire porte sur le logement participatif, en étudiant notamment Les Jardies à Meudon, un projet emblématique conçu par l'architecte Claude Guislan en 1973. À travers mes recherches, je m'interroge sur la place des habitants dans la conception de leur cadre de vie et sur les nouvelles formes d'habitat collaboratif.
+            </p>
+        </section>
+
+        <!-- Section Contact -->
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>
+                Vous pouvez me contacter à l'adresse <a href="mailto:sofiia.ukr.archi@gmail.com">sofiia.ukr.archi@gmail.com</a>.
+            </p>
+            <p>
+                Téléphone : <a href="tel:0760016161">0760016161</a>
+            </p>
+            <p>
+                E-mail de recherche mémoire: <a href="mailto:ensapbrecherche@gmail.com">ensapbrecherche@gmail.com</a>
+            </p>
+        </section>
+    </div>
+
+    <!-- JavaScript pour le menu déroulant -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+        function closeMenu() {
+            const menu = document.getElementById("dropdownMenu");
+            menu.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+.
